@@ -15,6 +15,14 @@ while op != 0:
         novo_campus = CampusIFPB(cidade, diretora)
         campi.append(novo_campus)
 
+    elif op == 2:
+        nome_busca = input('qual a cidade que vc quer criar o curso? ')
+        for campus in campi:
+            if campus.cidade == nome_busca:
+                nome_curso = input('qual voce vc quer criar').lower()
+                campus.criar_curso(nome_curso)
+                break
+
     elif op == 3:
         print('\n------Lista de Campus-----')
         for campus in campi:

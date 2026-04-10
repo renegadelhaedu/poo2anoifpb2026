@@ -12,7 +12,7 @@ class CampusIFPB:
 
     #método da classe
     def criar_curso(self, nome_curso):
-        if nome_curso == 'informatica' or nome_curso == 'agropecuario' or nome_curso == 'agroindustria':
+        if nome_curso in ['informatica','agropecuaria','agroindustria','meio ambiente']:
             self.cursos.append(nome_curso)
             print('curso criado com sucesso!')
         else:
