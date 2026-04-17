@@ -1,4 +1,7 @@
 from modelo import CampusIFPB
+from modelos.admin import Admin
+
+novo_admin = Admin()
 campi = []
 
 op = 99
